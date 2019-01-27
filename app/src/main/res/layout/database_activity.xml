@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="database"
+        />
+    <Button
+        android:id="@+id/btnSaveObjFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="saveObj - file"
+        />
+    <Button
+        android:id="@+id/btnReadObjFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="readObj - file"
+        />
+    <Button
+        android:id="@+id/btnSaveObjsFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="saveObjs - file"
+        />
+    <Button
+        android:id="@+id/btnReadObjsFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="readObjs - file"
+        />
+    <Button
+        android:id="@+id/btnSaveObjDB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="saveObj - DB"
+        />
+    <Button
+        android:id="@+id/btnReadObjDB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="readObj - DB"
+        />
+    <Button
+        android:id="@+id/btnSaveObjsDB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="saveObjs - DB"
+        />
+    <Button
+        android:id="@+id/btnReadObjsDB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="readObjs - DB"
+        />
+
+    <Button
+        android:id="@+id/btnClearDB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ClearDB"
+        />
+</LinearLayout>
