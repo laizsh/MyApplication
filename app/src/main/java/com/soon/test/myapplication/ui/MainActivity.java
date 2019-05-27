@@ -3,6 +3,7 @@ package com.soon.test.myapplication.ui;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -21,7 +22,8 @@ public class MainActivity extends Activity{
 
         addBtn("database", DataBaseActivity.class);
         addBtn("popupWindow", PopupWindowActivity.class);
-
+        addBtn("testJumpActivity", TestJump1Activity.class);
+        addBtn("animDemoActivity", AnimDemoActivity.class);
     }
 
     private void addBtn(String title, final Class<?> cls){
@@ -36,5 +38,11 @@ public class MainActivity extends Activity{
                 startActivity(intent);
             }
         });
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d("TestJump1Activity", " mainActivity onDestroy");
     }
 }
