@@ -24,6 +24,7 @@
         <activity android:name=".ui.TestJump1Activity"></activity>
         <activity android:name=".ui.TestJump2Activity"></activity>
         <activity android:name=".ui.AnimDemoActivity"></activity>
+        <activity android:name=".ui.AnimCameraActivity"></activity>
     </application>
 
 

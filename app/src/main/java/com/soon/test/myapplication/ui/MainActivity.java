@@ -24,6 +24,7 @@ public class MainActivity extends Activity{
         addBtn("popupWindow", PopupWindowActivity.class);
         addBtn("testJumpActivity", TestJump1Activity.class);
         addBtn("animDemoActivity", AnimDemoActivity.class);
+        addBtn("animCameraActivity", AnimCameraActivity.class);
     }
 
     private void addBtn(String title, final Class<?> cls){
