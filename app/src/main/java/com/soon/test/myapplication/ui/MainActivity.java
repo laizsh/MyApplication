@@ -23,6 +23,7 @@ public class MainActivity extends Activity{
         addBtn("database", DataBaseActivity.class);
         addBtn("popupWindow", PopupWindowActivity.class);
         addBtn("testJumpActivity", TestJump1Activity.class);
+        //       addBtn("testReqRsp", TestReqRspActivity.class);
         addBtn("animDemoActivity", AnimDemoActivity.class);
         addBtn("animCameraActivity", AnimCameraActivity.class);
     }

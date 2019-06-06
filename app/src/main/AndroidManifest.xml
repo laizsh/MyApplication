@@ -22,7 +22,9 @@
         <activity android:name=".ui.DataBaseActivity"></activity>
         <activity android:name=".ui.PopupWindowActivity"></activity>
         <activity android:name=".ui.TestJump1Activity"></activity>
-        <activity android:name=".ui.TestJump2Activity"></activity>
+        <activity android:name=".ui.TestJump2Activity"
+            android:process=":testJump"
+            ></activity>
         <activity android:name=".ui.AnimDemoActivity"></activity>
         <activity android:name=".ui.AnimCameraActivity"></activity>
     </application>
