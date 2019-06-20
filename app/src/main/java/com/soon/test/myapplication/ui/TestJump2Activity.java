@@ -3,6 +3,7 @@ package com.soon.test.myapplication.ui;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.ResultReceiver;
 import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.View;
@@ -23,9 +24,23 @@ public class TestJump2Activity extends Activity {
         findViewById(R.id.btn_rsp).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Log.d(TAG, "rsp@" + hashCode());
                 Intent intent = new Intent();
                 intent.putExtra(KEY_RSP, hashCode());
                 setResult(Activity.RESULT_OK, intent);
+                finish();
+            }
+        });
+
+        findViewById(R.id.btn_rsp_service).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d(TAG, "rsp_service@" + hashCode());
+                Intent intent = new Intent();
+                intent.putExtra(KEY_RSP, hashCode());
+
+                ResultReceiver r = getIntent().getParcelableExtra(TestJump1Activity.KEY_RECEIVER);
+                r.send(1, intent.getExtras());
                 finish();
             }
         });
